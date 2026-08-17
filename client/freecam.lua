@@ -113,6 +113,7 @@ lib.addKeybind({
         if playerState.zoom then return end
         if freecam.block then return end
         if freecam.cam then return disableFreeCam() end
+        if playerState.invOpen then return end
         createFreeCam()
     end,
 })
