@@ -97,6 +97,7 @@ lib.addKeybind({
         if playerState.freeCam then return end
         if zoom.block then return end
         if IsPlayerFreeAiming(cache.playerId) then return end
+        if playerState.invOpen then return end
         enableZoom()
     end,
     onReleased = function(self)
